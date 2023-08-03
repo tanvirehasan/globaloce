@@ -113,7 +113,7 @@ function If_Login($url){
 function user_from($u_info){
 
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://ipgeolocation.abstractapi.com/v1/?api_key=5f5922796be340b8b5c7531f1ee64270');
+    curl_setopt($ch, CURLOPT_URL, 'https://ipgeolocation.abstractapi.com/v1/?api_key=5f5922796be340b8b5c7531f1ee64270&ip_address=89.187.162.211');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
     $data = curl_exec($ch);
