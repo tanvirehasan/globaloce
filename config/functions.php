@@ -112,7 +112,6 @@ function If_Login($url){
 //Get user data country and city
 function user_from($u_info)
 {
-
     // Check if the HTTP_X_FORWARDED_FOR header exists
     if (isset($_SERVER['HTTP_X_FORWARDED_FOR']) && !empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
         // Use the first IP address in the list (actual client IP)
@@ -147,7 +146,7 @@ function pagelimit($getpagenumber, $limit){
 }
 
 function pagnation($tablename, $perpage){
-
+    
     global $conn;
     $sql1="SELECT * FROM {$tablename}";
     $query2 = mysqli_query($conn,$sql1);
