@@ -4,7 +4,7 @@
         <div class="row">
             <!-- Footer 1 -->
             <div class="col-md-4">
-                <img src="upload/basic/logo.png" width="70%" class="pb-3">
+                <img src="upload/basic/logo.PNG" width="70%" class="pb-3">
                 <p class="footer-text">Global Center of Excellence is a Melbourne, Australia-based organization committed to developing talents across the world. It exists to offer global learning events, professional certification, awards, research, and advocacy.</p>
             </div>
             <!-- Footer 2 -->

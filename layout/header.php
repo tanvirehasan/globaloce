@@ -18,7 +18,7 @@
   <nav class="navbar  sticky-top navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="index.php">
-        <img src="upload/basic/logo.png" alt="" width="250">
+        <img src="upload/basic/logo.PNG" alt="" width="250">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
