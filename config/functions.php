@@ -124,7 +124,7 @@ function user_from($u_info)
 
 
     $ch = curl_init();
-    $url = "https://ipgeolocation.abstractapi.com/v1/?api_key=5f5922796be340b8b5c7531f1ee64270&ip_address=1.23.255.255" . $ipAddress;
+    $url = "https://ipgeolocation.abstractapi.com/v1/?api_key=5f5922796be340b8b5c7531f1ee64270&ip_address=".$ipAddress;
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
