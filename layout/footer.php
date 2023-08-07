@@ -4,8 +4,15 @@
         <div class="row">
             <!-- Footer 1 -->
             <div class="col-md-4">
-                <img src="upload/basic/logo.PNG" width="70%" class="pb-3">
-                <p class="footer-text">Global Center of Excellence is a Melbourne, Australia-based organization committed to developing talents across the world. It exists to offer global learning events, professional certification, awards, research, and advocacy.</p>
+                <b class="h5 text-white mb-3">Global Center of Excellence, LLC</b>
+                <p class="h6 text-white mb-3 pt-2">Incorporating Body:</p>
+                <img src="upload/basic/ny.png" width="35%" class="pb-3">
+                <p class="text-white mb-3 footer-text">DOS ID : 6886942 <br>
+                    Employer Identification Number (EIN): 93-2089330<br>
+                    This company has been formed under Section 203 of the Limited Liability Company Law of the State of New York.
+                </p>
+
+                <!-- <p class="footer-text">Global Center of Excellence is a Melbourne, Australia-based organization committed to developing talents across the world. It exists to offer global learning events, professional certification, awards, research, and advocacy.</p> -->
             </div>
             <!-- Footer 2 -->
             <div class="col-md-4">
@@ -22,7 +29,7 @@
             <!-- Footer 3 -->
             <div class="col-md-4">
                 <p class="text-white fw-bold"><i class="fad fa-globe"></i> Contact Us</p>
-                <address class="text-secondary">Global Center of Excellence<br>Phone No. 01843640517 <br> Address: Suite-3/B/1,Tower-1, Suvastu Nazar Valley Shahjadpur, Gulshan, Dhaka-1212.</address>
+                <address class="text-secondary">Global Center of Excellence<br> <i class="fab fa-whatsapp"></i> Phone No. +1 929 386 4359 (Whatsapp) <br>+1 347 856 1274 (Whatsapp) <br> 24-22, 2nd Floor, 89th Street, East Elmhurst <br> New York - 11369, USA</address>
                 <button class="btn btn-sm bg-primary text-white me-2"><i class="fab fa-facebook-f"></i></button>
                 <button class="btn btn-sm  text-white me-2" style="background: #FE2E64;"><i class="fab fa-instagram"></i></button>
                 <button class="btn btn-sm  bg-info text-white me-2 "><i class="fab fa-linkedin-in"></i></button>

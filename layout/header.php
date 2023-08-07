@@ -34,11 +34,7 @@
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <?php
-                  $user_from = user_from('country_code');
-                  $countrow = SelectData('cuntry', "where code='{$user_from}'")->fetch_object();                                 
-                ?>
-                <img src="upload/basic/<?=$countrow->flg?>" alt="" width="35">
+                <img src="upload/basic/bd.png" alt="" width="35">
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <?php

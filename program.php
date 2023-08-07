@@ -14,7 +14,17 @@
 <div class="container py-5">  
     <div class="pt-5">
             <h1><?=$service->title?></h1>
-            <?=html_entity_decode($service->full_text)?>
+            <?php          
+           
+            
+           echo html_entity_decode($service->full_text)
+            
+            
+            
+            ?>
+
+
+
     </div>
 </div>
 
