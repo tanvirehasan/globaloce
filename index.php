@@ -8,9 +8,9 @@
         <div class="row py-5">
           <div class="col-md-5">
             <div class="sidertext">
-              <h1 class="text-white py-5"><?= $row->slider_title ?></h1>
-              <p class="text-white py-3"><?= $row->short_text ?></p>
-              <button class="btn border px-3 text-white"><?= $row->btn_text ?></button>
+              <h1 class="text-white pb-3 pt-5 "><?= $row->slider_title ?></h1>
+              <p class="text-white py-2"><?= $row->short_text ?></p>
+              <a href="<?= $row->btn_url ?>" class="btn border px-3 text-white"><?= $row->btn_text ?></a>
             </div>
           </div>
         </div>
@@ -63,7 +63,6 @@
     <div class="row">
       <div class="col-md-12">
         <div><?php echo $postcontent = html_entity_decode(About_Us('about_text')); ?></div>
-
       </div>
 
     </div>
@@ -102,7 +101,6 @@
           </div>
         </div>
       <?php } ?>
-
 
     </div>
   </div>

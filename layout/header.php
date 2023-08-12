@@ -29,7 +29,7 @@
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="about_us.php">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="program.php">Programs</a></li>
-            <li class="nav-item"><a class="nav-link" href="#news_events">Blog & Events</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#news_events">Blog & Events</a></li> -->
             <li class="nav-item"><a class="nav-link" href="contuct_us.php">Contact us</a></li>
 
             <li class="nav-item dropdown">
