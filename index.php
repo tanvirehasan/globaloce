@@ -87,15 +87,17 @@
       while ($service = $teab_data->fetch_object()) { ?>
         <div class="col-md-3 d-flex align-self-stretch mb-4">
           <div class="service_card">
-            <i class="<?= $service->Icon ?>"></i>
-            <h3 class="h3 py-3"><?= $service->title ?></h3>
-            <?php
-            $postcontent = html_entity_decode($service->full_text);
-            $content = strip_tags($postcontent);
-            echo mb_strimwidth($content, 0, 100, " ");
-            ?>
-            <div class="button_bar mt-2">
-              <a href="program.php?id=<?= $service->service_id ?>" class="btn btn-warning btn-sm">Learn More</a>
+            <img src="upload/services/<?= $service->image ?>" alt="" width="100%">
+            <div class="service_content p-4">
+              <h3 class="h3 py-2"><?= $service->title ?></h3>
+              <?php
+              $postcontent = html_entity_decode($service->full_text);
+              $content = strip_tags($postcontent);
+              echo mb_strimwidth($content, 0, 100, " ");
+              ?>
+              <div class="button_bar mt-2">
+                <a href="program.php?id=<?= $service->service_id ?>" class="btn btn-warning btn-sm">See Details</a>
+              </div>
             </div>
           </div>
         </div>
@@ -107,7 +109,7 @@
 </div>
 
 
-<!-- Our-Team -->
+<!-- Our-Team 
 <div class="our_team my-5 py-5">
   <div class="container">
     <div class="section_title text-center">
@@ -132,10 +134,10 @@
     </div>
   </div>
 </div>
+-->
 
 
-
-<!-- ============= Event & News ================= -->
+<!-- ============= Event & News 
 <div class="news_events my-5" id="news_events">
   <div class="container">
     <div class="section_title text-center">
@@ -158,7 +160,7 @@
               <p class="ps-3"><i class="fas fa-tag"></i> Soft Skills</p>
             </div>
             <p>Thanks to James McCulloch, Chief Executive, Asia of Inspire Group, New Zealand, for having me as a guest on his show when he was in Bangladesh in 1st week.</p>
-            <a style="color: #8cc242;" class="nav-link" href="full_blog.php">Read More --<i class="far fa-chevron-right" style="font-size:12px;"></i></a>
+            <div class="read_more"><a class="btn btn-info" href="full_blog.php">Read More...</i></a></div>
           </div>
         </div>
       </div>
@@ -223,9 +225,10 @@
     </div>
   </div>
 </div>
+================= -->
 
 
-<!-- ============= Testimonials ================= -->
+<!-- ============= Testimonials 
 <div class="testimonials my-5 py-5">
   <div class="container">
     <div class="section_title text-center">
@@ -263,5 +266,7 @@
     </div>
   </div>
 </div>
+
+================= -->
 
 <?php include "layout/footer.php"; ?>

@@ -18,18 +18,18 @@
             <div class="col-md-4">
                 <ul>
                     <h5 class="h6 text-white mb-3"><i class="fas fa-map-marked-alt"></i> Menu</h5>
-                    <li><a href="">Home</a></li>
-                    <li><a href="#team">About Us</a></li>
-                    <li><a href="gallery.php">Programs/services</a></li>
-                    <li><a href="#Actress">Contact us</a></li>
-                    <li><a href="">Terms & Conditions</a></li>
-                    <li><a href="">Privacy Policy</a></li>
+                    <li><a class="text-white" href="">Home</a></li>
+                    <li><a class="text-white" href="#team">About Us</a></li>
+                    <li><a class="text-white" href="gallery.php">Programs/services</a></li>
+                    <li><a class="text-white" href="#Actress">Contact us</a></li>
+                    <li><a class="text-white" href="">Terms & Conditions</a></li>
+                    <li><a class="text-white" href="">Privacy Policy</a></li>
                 </ul>
             </div>
             <!-- Footer 3 -->
             <div class="col-md-4">
                 <p class="text-white fw-bold"><i class="fad fa-globe"></i> Contact Us</p>
-                <address class="text-secondary">Global Center of Excellence<br> <i class="fab fa-whatsapp"></i> Phone No. +1 929 386 4359 (Whatsapp) <br>+1 347 856 1274 (Whatsapp) <br> 24-22, 2nd Floor, 89th Street, East Elmhurst <br> New York - 11369, USA</address>
+                <address class="text-white">Global Center of Excellence, LLC<br> <a class="text-white text-decoration-none" href="https://wa.me/19293864359"> <i class="fab fa-whatsapp"></i> +1 929 386 4359 (Whatsapp) </a> <br> <a class="text-white text-decoration-none" href="https://wa.me/13478561274"><i class="fab fa-whatsapp"></i> +1 347 856 1274 (Whatsapp) </a> <br> 24-22, 2nd Floor, 89th Street, East Elmhurst <br> New York - 11369, USA</address>
                 <button class="btn btn-sm bg-primary text-white me-2"><i class="fab fa-facebook-f"></i></button>
                 <button class="btn btn-sm  text-white me-2" style="background: #FE2E64;"><i class="fab fa-instagram"></i></button>
                 <button class="btn btn-sm  bg-info text-white me-2 "><i class="fab fa-linkedin-in"></i></button>

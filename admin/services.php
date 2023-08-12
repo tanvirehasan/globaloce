@@ -1,8 +1,17 @@
 <?php
 include "layout/header.php";
+
 if (isset($_POST['add_service'])) {
-    $fulltext = htmlspecialchars($_POST['full_text']);
-    InsertData('aa_our_services', "title,Icon,full_text", "'{$_POST['title']}', '{$_POST['Icon']}','$fulltext'");
+
+    $title      = htmlspecialchars($_POST['title']);
+    $fulltext   = htmlspecialchars($_POST['full_text']);
+
+    $target_dir = "../upload/services/";
+    $image      = $_FILES["image"]["name"];
+    $target_file = $target_dir . basename($_FILES["image"]["name"]);
+    move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
+
+    InsertData('aa_our_services', "title, image, full_text", "'$title', '$image','$fulltext'");
 }
 
 if (isset($_POST['update_service'])) {
@@ -50,8 +59,8 @@ if (isset($_GET['delete_id'])) {
             <div class="newservices">
                 <label for="categoryname" class=" form-label" style="font-weight:700;">Service Name</label>
                 <input type="text" class="form-control mb-4 " name="title" require>
-                <label for="categoryname" class=" form-label" style="font-weight:700;">Service Icon</label>
-                <input type="text" class="form-control mb-4 " name="Icon" require>
+                <label for="categoryname" class=" form-label" style="font-weight:700;">Service image</label>
+                <input type="file" class="form-control mb-4 " name="image" require>
                 <label for="categoryname" class="form-label pb-2" style="font-weight:700;">Text & Link</label>
                 <textarea class="form-control" id="texteditro" name="full_text" require></textarea>
                 <div class="float-right my-3"><button type="submit" name="add_service" class="btn btn-primary"> Submit</button></div>
@@ -73,7 +82,7 @@ if (isset($_GET['delete_id'])) {
                     <tr>
                         <th>SL</th>
                         <th>Name</th>
-                        <th>icon</th>
+                        <th>image</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -87,7 +96,7 @@ if (isset($_GET['delete_id'])) {
                         <tr>
                             <td><?= $i++ ?></td>
                             <td><?= $service->title ?></td>
-                            <td><i class="<?= $service->Icon ?>"></i></td>
+                            <td> <img src="../upload/services/<?= $service->image?>" alt="" width="20%" > </td>
                             <td>
                                 <a href="services.php?service_id=<?= $service->service_id ?>" class="btn btn-warning btn-sm text-white">Edit</a>
                                 <a href="services.php?delete_id=<?= $service->service_id ?>" onclick="return confirm('Are you sure?')" class="btn btn-danger btn-sm text-white">Delete</a>

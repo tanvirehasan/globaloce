@@ -1,6 +1,5 @@
 @font-face { font-family: prototype; src: url('../font/Prototype.ttf'); } 
 
-
 .nav-link{
     color: #363636 !important;    
     font-family: prototype;
@@ -23,6 +22,10 @@
     margin-bottom: 60px;
 }
 
+.service_title{
+  font-family: prototype;
+}
+
 .service_card:hover{
     margin-top: 5px;
     transition: 0.3s;
@@ -31,7 +34,7 @@
 
 .service_card{
   border-radius: 10px;
-  padding: 30px;
+  padding: 0px;
   width: 100%;
   background:#FBF2E6;
 }
@@ -40,6 +43,48 @@
   font-size: 80px;
   color: #ac050594;
 }
+
+
+.button_bar a{
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.join_this_course{
+    border-left: 3px solid #ffba93 !important;
+    background: #fff1e9 !important;
+    border: none !important;
+    border-radius: 10px !important;
+}
+
+.facilitator{
+    border-left: 3px solid #8faeff;
+    background: #eff4ff !important;
+    border: none !important;
+    border-radius: 10px !important;
+}
+
+.facilitator_details_card {
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: #fff;
+    width: 100%;
+}
+
+.facilitator_details_card img{
+  width: 70px;
+  border-radius: 50%;
+}
+
+.facilitator_details_card:hover{
+  background: #fcfbfb;
+}
+
 
 
 
@@ -107,6 +152,14 @@
 
 .athor_cat p{font-size: 14px;}
 .athor_cat i{font-size: 10px;}
+.read_more{
+  color: black !important;
+}
+
+.read_more a{
+  color: rgb(255, 255, 255) !important;
+}
+
 
 
 

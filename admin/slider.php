@@ -2,8 +2,19 @@
 
   include "layout/header.php";
   // Insert 
-  if (isset($_POST['slider_save'])) { 
-      InsertData('a_slider', "slider_title,short_text,btn_text,btn_url,image_file", "'{$_POST['slider_title']}', '{$_POST['short_text']}','{$_POST['btn_text']}','{$_POST['btn_url']}','{$_FILES['image_file']['name']}'" );
+  if (isset($_POST['slider_save'])) {
+
+  $slider_title = htmlspecialchars($_POST['slider_title']);
+  $short_text   = htmlspecialchars($_POST['short_text']);
+  $btn_text     = htmlspecialchars($_POST['btn_text']);
+  $btn_url      = htmlspecialchars($_POST['btn_url']);
+
+  $target_dir = "../upload/slider/";
+  $image      = $_FILES["image_file"]["name"];
+  $target_file = $target_dir . basename($_FILES["image_file"]["name"]);
+  move_uploaded_file($_FILES["image_file"]["tmp_name"], $target_file);
+  InsertData('a_slider', "slider_title,short_text,btn_text,btn_url,image_file", "'$slider_title', '$short_text','$btn_text',' $btn_url','$image'" );
+
   }
 
   // Delete 
