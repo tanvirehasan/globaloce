@@ -3,8 +3,8 @@
 include "layout/header.php";
 if (isset($_GET['id'])) {
     $teab_data = SelectData('aa_our_services', " WHERE service_id='{$_GET['id']}'");
-    $service = $teab_data->fetch_object();
-    $title = "> " . $service->title;
+    $services = $teab_data->fetch_object();
+    $title = "> " . $services->title;
 } else {
     $title = '';
 }
@@ -20,9 +20,8 @@ if (isset($_GET['id'])) {
 if (isset($_GET['id'])) { ?>
     <div class="container py-5">
         <div class="pt-5">
-            <h1 class="service_title"><?= $service->title ?></h1>
-            <img class="py-3" src="upload/services/<?= $service->image ?>" alt="" width="100%">
-            <?php echo html_entity_decode($service->full_text) ?>
+            <h1 class="service_title pb-5"><?= $services->title ?></h1>           
+            <?php echo html_entity_decode($services->full_text) ?>
         </div>
     </div>
 <?php } else { ?>
@@ -65,7 +64,7 @@ if (isset($_GET['id'])) { ?>
             <div class="card facilitator p-5">
                 <h1 class="mb-5">Facilitator</h1>
                 <?php
-                $team_data = SelectData('our_team', "");
+                $team_data = SelectData('our_team', "where tid='{$services->facilitator_id}'");
                 while ($our_team = $team_data->fetch_object()) { ?>
                     <a class="text-decoration-none text-dark" href="team.php?id=<?= $our_team->tname ?>">
                         <div class="facilitator_details_card" style="cursor: pointer;">
@@ -92,7 +91,7 @@ if (isset($_GET['id'])) { ?>
 
                     <div class="col-md-6">
                         <label for="validationCustom01" class="form-label">First name</label>
-                        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                        <input type="text" class="form-control" id="validationCustom01" value="" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
@@ -100,7 +99,7 @@ if (isset($_GET['id'])) { ?>
 
                     <div class="col-md-6">
                         <label for="validationCustom02" class="form-label">Last name</label>
-                        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
@@ -108,7 +107,7 @@ if (isset($_GET['id'])) { ?>
 
                     <div class="col-md-6">
                         <label for="validationCustom01" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                        <input type="email" class="form-control" id="validationCustom01" value="" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
@@ -116,7 +115,7 @@ if (isset($_GET['id'])) { ?>
 
                     <div class="col-md-6">
                         <label for="validationCustom02" class="form-label">Phone/Whatsapp No.</label>
-                        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>

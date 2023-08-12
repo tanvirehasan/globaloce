@@ -27,14 +27,23 @@
         <div class="navbar-nav ">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about_us.php">About Us</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="about_us.php" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="about_us.php">About</a></li>
+                <li><a class="dropdown-item" href="team.php">Our Leadership Team</a></li>
+                <li><a class="dropdown-item" href="#">Advisory Board</a></li>
+              </ul>
+            </li>
+
             <li class="nav-item"><a class="nav-link" href="program.php">Programs</a></li>
             <!-- <li class="nav-item"><a class="nav-link" href="#news_events">Blog & Events</a></li> -->
             <li class="nav-item"><a class="nav-link" href="contuct_us.php">Contact us</a></li>
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="upload/basic/bd.png" alt="" width="35">
+                <img src="upload/basic/usa.png" alt="" width="35">
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <?php
